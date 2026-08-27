@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefunken Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Telefunken Dashboard</h1>
+        <p>Game statistics, leaderboard, and round-by-round averages</p>
+    </header>
+
+    <main>
+        <!-- Overall Stats Section -->
+        <section>
+            <h2>Overview</h2>
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <h3>Total Games</h3>
+                    <p id="total-games">-</p>
+                    <span>Games recorded</span>
+                </div>
+                <div class="stat-card">
+                    <h3>All-Time Best Score</h3>
+                    <p id="best-score">-</p>
+                    <span id="best-score-player">-</span>
+                </div>
+                <div class="stat-card">
+                    <h3>All-Time Worst Score</h3>
+                    <p id="worst-score">-</p>
+                    <span id="worst-score-player">-</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Section -->
+        <section>
+            <h2>Leaderboard</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Wins</th>
+                            <th>Games Played</th>
+                            <th>Win Rate</th>
+                            <th>Avg Score</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                        <!-- Populated by app.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Player Breakdown Section -->
+        <section>
+            <h2>Player Breakdown</h2>
+            <div id="player-cards" class="player-grid">
+                <!-- Populated by app.js -->
+            </div>
+        </section>
+
+        <!-- Round / Category Averages Section -->
+        <section>
+            <h2>Average Score by Round</h2>
+            <div class="table-container">
+                <table>
+                    <thead id="category-head">
+                        <!-- Populated by app.js -->
+                    </thead>
+                    <tbody id="category-body">
+                        <!-- Populated by app.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>

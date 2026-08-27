@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #ccc;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Overall stat cards */
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.stat-card h3 {
+    margin-top: 0;
+    font-size: 15px;
+    color: #666;
+}
+
+.stat-card p {
+    margin: 5px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stat-card span {
+    color: #666;
+}
+
+
+/* Player cards */
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.player-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.player-card h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.player-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.player-stat {
+    background: #f7f7f7;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.player-stat .label {
+    display: block;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.player-stat .value {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Tables */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #eee;
+}
+
+tbody tr:hover {
+    background: #f8f8f8;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
